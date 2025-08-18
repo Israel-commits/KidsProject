@@ -994,3 +994,147 @@ button[type="submit"] {
 .borderFooter {
     border: 1px solid #fff;
 }
+
+
+/* mobile responsiveness code */
+/* header */
+@media (min-width: 375px) and (max-width: 768px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .logo img {
+    padding-left: 0;
+    margin-right: 0;
+    height: 35px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .right-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .book,
+  .log {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* hero */
+@media (min-width: 375px) and (max-width: 768px) {
+  .secOne {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .bannerWrapper {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .bannerContent h1 {
+    font-size: 1.8rem;
+  }
+
+  .imgTwo {
+    padding: 2rem 0;
+    justify-content: center;
+  }
+
+  .imgTwo img {
+    height: 250px;
+    width: auto;
+  }
+
+  .bannerImg img {
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+
+  .whatsapp img {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 60px;
+    left: auto;
+  }
+
+  .below-txt {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .txtCont {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Para {
+    padding: 10px 0;
+  }
+
+  .subtext {
+    margin: 15px 0;
+    font-size: 14px;
+  }
+
+  .btnOne {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .btnOne a {
+    margin-right: 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  .btnTwo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .btn-call {
+    height: 40px;
+  }
+
+  .btn-txt {
+    padding-left: 0;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+/* section two */
+@media (min-width: 375px) and (max-width: 768px) {
+  .secTwo {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .sec img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
