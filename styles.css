@@ -998,7 +998,7 @@ button[type="submit"] {
 
 /* mobile responsiveness code */
 /* header */
-@media (min-width: 375px) and (max-width: 768px) {
+@media (max-width: 480px) {
   header {
     padding: 10px 15px;
   }
@@ -1006,7 +1006,7 @@ button[type="submit"] {
   .logo {
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
+    gap: 10px;
   }
 
   .logo img {
@@ -1018,7 +1018,7 @@ button[type="submit"] {
   nav ul {
     flex-direction: column;
     gap: 10px;
-    font-size: 14px;
+    font-size: 13px;
     width: 100%;
   }
 
@@ -1033,6 +1033,55 @@ button[type="submit"] {
   .log {
     width: 100%;
     text-align: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .right-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .book,
+  .log {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logo img {
+    height: 40px;
+    padding-left: 40px;
+    margin-right: 40px;
+  }
+
+  nav ul {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .right-box {
+    gap: 10px;
+  }
+
+  .book,
+  .log {
+    padding: 10px 20px;
   }
 }
 /* hero */
