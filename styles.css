@@ -4,68 +4,62 @@
     padding: 0;
     box-sizing: border-box;
 }
-header {
-    background-color: #F0F9FF;
-    padding: 10px 25px 10px;
-    position: fixed;
-    width: 100%;
-}
 body {
-    font-family: 'fredoka';
+  font-family: 'fredoka';
+  background-color: #fff;
 }
+header {
+  background-color: #f0f9ff;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+/* logo */
+.logo img {
+  height: 60px;
+  padding-right: 100px;
+}
+/* nav */
 nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  list-style: none;
+  padding-right: 60px;
 }
-.active {
-    color: #180EC8;
-    font-weight: 700;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo img{
-    height: 40px;
-    padding-left: 80px;
-    margin-right: 80px;
-}
-.logo ul {
-    gap: 20px;
-}
+/* rightbox */
 .right-box {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.right-box a {
-    text-decoration: none;
-}
-.right-box img {
-    padding: 0;
-    margin: 0;
-    height: 30px;
+  padding: 0 50px;
 }
 .right-box h3 {
-    font-size: 14px;
-    color: #180EC8;
+  font-size: .8rem;
+  color: #06034D;
 }
-.book {
-    background-color: #180EC8;
-    color: #fff;
-    padding: 10px 25px 10px;
-    border-radius: 25px;
+.right-box img {
+  padding: 0;
+  margin: 0;
+  height: 25px;
 }
 .log {
-    border: 1px solid #180EC8;
-    border-radius: 25px;
-    color: #180EC8;
-    padding: 10px 25px 10px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #180EC8;
+  color: #180EC8;
+  padding: 10px 35px;
+  border-radius: 25px;
 }
+.book {
+  text-decoration: none;
+  background-color: #180EC8;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 25px;
+}
+
 .secOne {
     display: flex;
     background-color: #fff;
@@ -749,6 +743,87 @@ background-color: #C2E7FD;
     font-size: 14px;
     color: #06034D;
 }
+/* freq */
+.freq {
+  background-color: #F0F9FF;
+  padding: 4rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.freq-now {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.freqTxt h6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FDDA03;
+  color: #06034D;
+  padding: 5px 5px;
+  width: 20%;
+}
+.freqTxt h4 {
+  display: flex;
+  justify-content: center;
+}
+
+.faq-item {
+  margin-bottom: 3px;
+  background: #fff;
+  box-shadow: 1px 4px rgba(0,0,0,0.1);
+  height: 80px;
+  border-radius: 8px;
+  width: 90%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-txt {
+  color: #180EC8;
+  padding-left: 1rem;
+  padding-bottom: 12px;
+  padding-top: 1rem;
+  font-size: .9rem;
+  font-weight: 300;
+}
+.faq-answer {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 1rem;
+  padding-bottom: 20px;
+}
+button.faq-question {
+  background-color: transparent;
+  border: none;
+  color: #06034D;
+  padding-left: 1rem;
+}
+.faq-question h4 {
+  font-weight: 600;
+}
+.point-arrow {
+  background-color: #f0f9ff;
+  color: #06034D;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq-question .point-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* contact form */
 .contactBox {
     display: flex;
@@ -796,24 +871,29 @@ background-color: #C2E7FD;
   margin-bottom: 15px;
 }
 .Name {
-    padding-left: 50px;
+  
 }
 .form-row input {
   flex: 1;
   padding: 12px;
-  border: 2px solid #06034D;
+  border: #06034D;
   font-size: 14px;
   background-color: transparent;
   border-top: none;
   border-left: none;
   border-right: none;
 }
-
+.form-row #inputB {
+  border: 1px solid rgba(67, 62, 118, 0.05);
+}
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid rgba(67, 62, 118, 0.2);
+  border-top: none;
+  border-left: none;
+  border-right: none;
   font-size: 14px;
   margin-bottom: 15px;
 }
@@ -917,25 +997,6 @@ button[type="submit"] {
     display: flex;
     justify-content: center;
 }
-/* accordion */
-.accord {
-    display: flex;
-    align-items: center;
-    background-color: #F0F9FF;
-    padding: 3rem 8rem 3rem;
-    height: 100vh;
-}
-.faq h5 {
-    background-color: #FDDA03;
-    color: #06034D;
-    font-weight: 500;
-    font-size: 12px;
-    padding: 5px 5px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .contact h2 {
     font-weight: 500;
     color: #06034D;

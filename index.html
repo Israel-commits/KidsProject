@@ -8,35 +8,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-    <header>
-  <div class="logo">
-    <img src="/images/logo.PNG" alt="Logo" />
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
 
-  <nav>
-    <ul class="nav-links" id="nav-links">
+  <header>
+    <div class="menu-toggle" id="menu-toggle"></div>
+    <nav>
+      <div class="logo">
+      <img src="/images/logo.PNG" alt="">
+      <ul>
       <li class="active">Home</li>
       <li>Why Icon School</li>
       <li>Tickets</li>
       <li>Pricing</li>
       <li>Blogs</li>
       <li>Contact Us</li>
-    </ul>
-
-    <div class="right-box">
+      <div class="right-box">
       <img src="/images/arabic map.png" alt="Arabic Map" />
       <h3>Arabic</h3>
       <a href="#" class="book">Book Now</a>
       <a href="#" class="log">Log in</a>
     </div>
+    </ul>
+    </div>
   </nav>
-</header>
-
+  </header>
 
     <section class="secOne">
             <div class="bannerWrapper">
@@ -329,18 +323,57 @@
                 <a href="#" class="blog-btn">See More</a>
             </div>
          </section>
-                 <section>
-            <div class="accord">
-                <div class="faq">
-                    <h5>FAQS</h5>
-                </div>
+         <!-- FAQ -->
+          <section class="freq">
+            <div class="freqTxt">
+              <div class="freq-now">
+                <h6>FAQ</h6>
+              </div>
+              <h4>Frequently Asked Questions</h4>
             </div>
-            <div class="freq">
-            <h3>Frequently Asked Questions</h3>
-            </div>
-        </section>
+            <div class="faq-item">
+              <div class="faq-question">
+                <div class="faq-txt">
+                  <h4>What age group do Icon School target?</h4>
 
-            <!-- contact form -->
+                </div>
+                <div class="faq-answer">
+                <p>Icon School targets children and teenagers aged 6 to 16, with learning
+                  path specifically designed to suit each age group and skill level.
+                </p>
+              </div>
+
+              </div>
+              <div class="point-arrow">
+                <i class="fa-solid fa-arrow-up"></i>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <h4>Does my child needs any prior knowledge of programming to start with you?</h4>
+              </button>
+              <div class="point-arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <h4>What is the difference between programming  and Robotics tasks?</h4>
+              </button>
+              <div class="point-arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <h4>How can i track my child's progress throughout the course?</h4>
+              </button>
+              <div class="point-arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+            </div>
+          </section>
+  <!-- contact form -->
          <section>
             <div class="contactBox">
                 <div class="contact">
@@ -360,7 +393,7 @@
         <label class="Name">Name</label>
         <input type="text" required>
         <label>Email</label>
-        <input type="email" placeholder="E-mail" value="example25@gmail.com" required>
+        <input type="email" id="inputB" placeholder="E-mail" value="example25@gmail.com" required>
       </div>
       <label class="Name">Message</label>
       <textarea placeholder="Write your message here..." rows="5"></textarea>
