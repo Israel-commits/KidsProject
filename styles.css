@@ -11,7 +11,6 @@ body {
 /* /* HEAD */
 .head {
   background-color: #F0F9FF;
-  border: 2px solid red;
   height: auto;
   position: fixed;
   width: 100%;
