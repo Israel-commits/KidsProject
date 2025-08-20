@@ -8,58 +8,71 @@ body {
   font-family: 'fredoka';
   background-color: #fff;
 }
-header {
-  background-color: #f0f9ff;
+/* /* HEAD */
+.head {
+  background-color: #F0F9FF;
+  border: 2px solid red;
   height: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  width: 100%;
+  padding: 1rem 4rem;
+  box-shadow: rgba(0, 0, 0, 0.05);
 }
 /* logo */
 .logo img {
-  height: 60px;
-  padding-right: 100px;
+  height: 50px;
+  padding-left: 5rem;
 }
 /* nav */
 nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 20px;
+  margin-right: 150px;
+}
+nav ul li {
   list-style: none;
-  padding-right: 60px;
-}
-/* rightbox */
-.right-box {
-  padding: 0 50px;
-}
-.right-box h3 {
-  font-size: .8rem;
+  font-weight: 400;
   color: #06034D;
 }
-.right-box img {
-  padding: 0;
-  margin: 0;
-  height: 25px;
-}
-.log {
-  text-decoration: none;
-  background-color: transparent;
-  border: 1px solid #180EC8;
+.active {
+  list-style: none;
+  font-weight: 600;
   color: #180EC8;
-  padding: 10px 35px;
-  border-radius: 25px;
+}
+/* right box */
+.right-box {
+  display: flex;
+  gap: 15px;
+  width: 20%;
 }
 .book {
-  text-decoration: none;
   background-color: #180EC8;
   color: #fff;
-  padding: 10px 35px;
   border-radius: 25px;
+  text-decoration: none;
+  padding: 10px 25px;
 }
-
+.login {
+  border: 1px solid #180EC8;
+  color: #180EC8;
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 10px 25px;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #06034D;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 .secOne {
     display: flex;
     background-color: #fff;
@@ -211,13 +224,7 @@ nav ul {
     gap: 20px;
     margin-top: 20px;
 }
-.One {
-    text-decoration: none;
-    color: #fff;
-    background-color: #180EC8;
-    border-radius: 25px;
-    padding: 10px 35px 10px;
-}
+
 .about {
     height: 100vh;
     display: flex;
@@ -428,6 +435,14 @@ background-color: #C2E7FD;
     display: flex;
     justify-content: center;
     margin: 15px;
+}
+.programOne {
+    text-decoration: none;
+    color: #fff;
+    background-color: #180EC8;
+    border-radius: 25px;
+    padding: 10px 35px 10px;
+    width: auto;
 }
 .program {
     text-decoration: none;
@@ -1139,90 +1154,101 @@ textarea {
 
 /* mobile responsiveness code */
 /* header */
-@media (max-width: 480px) {
+@media (max-width: 992px) {
   header {
-    padding: 10px 15px;
-  }
-
-  .logo {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .logo img {
-    padding-left: 0;
-    margin-right: 0;
-    height: 35px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    font-size: 13px;
-    width: 100%;
-  }
-
-  .right-box {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .book,
-  .log {
-    width: 100%;
-    text-align: center;
-  }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  .logo {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  nav ul {
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    font-size: 14px;
-  }
-
-  .right-box {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .book,
-  .log {
-    padding: 8px 20px;
-    font-size: 14px;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .logo img {
-    height: 40px;
-    padding-left: 40px;
-    margin-right: 40px;
-  }
-
-  nav ul {
-    gap: 15px;
-    font-size: 14px;
-  }
-
-  .right-box {
-    gap: 10px;
-  }
-
-  .book,
-  .log {
     padding: 10px 20px;
+  }
+
+  .logo img {
+    padding-right: 20px;
+    height: 50px;
+  }
+
+  nav ul {
+    gap: 0.8rem;
+    padding-right: 20px;
+  }
+
+  .log, .book {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .right-box {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .log, .book {
+    width: auto;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .logo img {
+    height: 50px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+
+  .menu-toggle {
+    display: block;
+  }
+
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+
+  nav.active {
+    display: flex;
+  }
+
+  .right-box {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
   }
 }
 
@@ -1317,7 +1343,8 @@ textarea {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .bannerWrapper {
-    padding: 3rem 5rem;
+    padding: 5rem 5rem;
+    margin-top: 1rem;
   }
 
   .imgTwo {
@@ -1431,7 +1458,7 @@ textarea {
   .One {
     padding: 10px 20px;
     font-size: 14px;
-    width: 100%;
+    width: 50%;
     text-align: center;
   }
 
@@ -2202,7 +2229,7 @@ textarea {
   }
 
   .contact {
-    width: 30%;
+    width: 40%;
     text-align: center;
     display: flex;
     justify-content: center;
