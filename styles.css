@@ -659,7 +659,7 @@ background-color: #C2E7FD;
 }
 .mapCont h5 {
     background-color: #FDDA03;
-    width: 10%;
+    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1157,6 +1157,8 @@ textarea {
   header {
     flex-wrap: wrap;
     padding: 10px 20px;
+    position: fixed;
+    z-index: -1;
   }
 
   .logo img {
@@ -1180,6 +1182,7 @@ textarea {
     flex-direction: column;
     align-items: flex-start;
     padding: 15px 20px;
+    position: static;
   }
 
   nav ul {
@@ -1258,6 +1261,7 @@ textarea {
     flex-direction: column;
     height: auto;
     margin-bottom: 30px;
+    padding: 15pc 4px;
   }
 
   .bannerWrapper {
@@ -1267,7 +1271,7 @@ textarea {
   }
 
   .bannerContent h1 {
-    font-size: 22px;
+    font-size: 1rem;
   }
 
   .imgTwo {
